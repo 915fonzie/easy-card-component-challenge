@@ -34,8 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://card-component1.netlify.app/)
 
 ## My process
 I first started off with the html by dividing everything into the appropriate containers and class names. For this card component, I started off with a section to contain the card so I can center it on the page. I then created the card component with two div children, one for the text info and the other for the image. I then also gave the text another three div children for the stats.
