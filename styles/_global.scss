@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $background-color;
+}
+
+h2 {
+  font-size: $header2;
+  color: $main-heading;
+}
+h3 {
+  font-size: $header3;
+  color: $main-heading;
+}
+
+p,
+a {
+    font-size: $text;
+    font-family: 'Inter', sans-serif;
+    color: $main-paragraph;
+
+}
