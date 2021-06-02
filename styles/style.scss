@@ -18,7 +18,7 @@ $stat-heading: hsla(0, 0%, 100%, 0.6);
 @import "./global";
 
 .card-background {
-  min-height: 100vh;
+  min-height: 90vh;
   @include flex(center, center, row);
 }
 
@@ -91,6 +91,13 @@ $stat-heading: hsla(0, 0%, 100%, 0.6);
   flex: 1 1 7rem;
 }
 
+.attribution {
+  @include flex(center, center, row);
+  a {
+    margin-left: 0.5rem;
+  }
+}
+
 @media screen and (max-width: 1044px) and (min-width: 375px) {
   html {
     font-size: 50%;
@@ -134,9 +141,9 @@ $stat-heading: hsla(0, 0%, 100%, 0.6);
   }
 
   .card-stat1,
-.card-stat2,
-.card-stat3 {
-  flex: 1 1 20rem;
-  margin: 1.5em;
-}
+  .card-stat2,
+  .card-stat3 {
+    flex: 1 1 20rem;
+    margin: 1.5em;
+  }
 }
