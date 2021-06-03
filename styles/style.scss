@@ -1,4 +1,4 @@
-$header2: calc(2em + 0.5vw);
+$header2: calc(3em + 0.5vw);
 $header3: calc(1.5em + 0.5vw);
 $text: calc(1em + 0.5vw);
 $background-color: hsl(233, 47%, 7%);
@@ -38,7 +38,8 @@ $stat-heading: hsla(0, 0%, 100%, 0.6);
 }
 
 .card-info {
-  padding: 0rem calc(3rem + 0.5vw);
+  padding: 0rem;
+  padding-left:  calc(5rem + 0.5vw);
   margin-right: 5rem;
   @include flex(center, flex-start, column);
 }
@@ -48,22 +49,15 @@ $stat-heading: hsla(0, 0%, 100%, 0.6);
 }
 
 .card-image {
-  position: relative;
+  isolation: isolate;
+  background: hsl(277, 64%, 61%);
   img {
+    mix-blend-mode: multiply;
+    opacity: 75%;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-}
-
-.card-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(170, 92, 219, 0.5);
 }
 
 .card-stats {
